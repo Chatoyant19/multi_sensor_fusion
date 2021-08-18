@@ -30,8 +30,7 @@ int main(int argc, char** argv) {
       kf.setQ(Q);
 
       Eigen::MatrixXd H(2, 4);
-      H << 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-          0.0, 0.0;
+      H << 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0;
       kf.setH(H);
 
       // R is provided by sensor supplier

@@ -57,7 +57,7 @@ int main(int argc, char** argv) {
 
     ekf.predictionEKF();
 
-    Eigen::VectorXd z(4, 1);
+    Eigen::VectorXd z(3, 1);
     z << rho, theta, rho_dot;
     ekf.measurementUpdateEKF(z);
 
